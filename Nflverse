@@ -1,0 +1,13 @@
+# Install NFLVerse meta-package
+if (!require("nflverse", quietly = TRUE)) {
+  install.packages("nflverse")
+}
+
+# Or for the latest development version from GitHub:
+if (!require("remotes", quietly = TRUE)) {
+  install.packages("remotes")
+}
+remotes::install_github("nflverse/nflverse")
+
+# Load all NFLVerse packages
+library(nflverse)
